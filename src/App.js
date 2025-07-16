@@ -5,6 +5,7 @@ import { auth } from './firebaseConfig';
 import AuthForm from './components/AuthForm';
 import Home from './pages/Home';
 import MyPage from './pages/MyPage'; // ✅ 마이페이지 import
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -30,6 +31,9 @@ function App() {
   };
 
   return (
+    <Router>
+
+
     <div className="App">
       <h1>모의 펀딩 사이트</h1>
 
@@ -44,6 +48,7 @@ function App() {
 
       {loggedIn ? (showMyPage ? <MyPage /> : <Home />) : <AuthForm />}
     </div>
+        </Router>
   );
 }
 
