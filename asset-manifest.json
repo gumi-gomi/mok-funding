@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/mok-funding/static/css/main.31d6cfe0.css",
-    "main.js": "/mok-funding/static/js/main.71f787de.js",
+    "main.js": "/mok-funding/static/js/main.8a93e5cc.js",
     "index.html": "/mok-funding/index.html",
-    "main.71f787de.js.map": "/mok-funding/static/js/main.71f787de.js.map"
+    "main.8a93e5cc.js.map": "/mok-funding/static/js/main.8a93e5cc.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.71f787de.js"
+    "static/js/main.8a93e5cc.js"
   ]
 }
