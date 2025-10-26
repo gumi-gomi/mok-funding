@@ -2,6 +2,7 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
+import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAQOEIY72UMB5iSkxed6it8MfE-Li2CVk",
@@ -13,7 +14,10 @@ const firebaseConfig = {
 };
 // Firebase 초기화
 const app = initializeApp(firebaseConfig);
+const storage = getStorage(app); // ✅ 추가
 
 // 인증과 Firestore 인스턴스 export
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+
+export { storage }; // ✅ storage도 export
